@@ -45,7 +45,7 @@ Loadable objects can have other Loadable objects as properties. Arrays of other 
 
 	@property (strong) InceptionModel *inception;
 	@property (strong) DateModel *model;
-	@property (strong) LoadableArray(PrimativesModel, primatives);
+	@property (strong) LoadableArray(PrimitivesModel, primitives);
 	@property (strong) NSArray *numbers;
 	@property (strong) NSDictionary *dictionary;
 
