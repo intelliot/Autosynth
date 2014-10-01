@@ -1,4 +1,4 @@
-Authosynth allows you to automatically convert a NSDictionary onto properties of a class.
+Autosynth allows you to automatically convert an NSDictionary onto properties of a class.
 
 * Make the class a subclass of Loadable.
 * Create an instance using one of
@@ -7,11 +7,11 @@ Authosynth allows you to automatically convert a NSDictionary onto properties of
   
   [MyClass withJsonString:@"{"key": "value"}]
   
-  [MyClass withJsonData:jsonDataVaraible]
+  [MyClass withJsonData:jsonDataVariable]
 
 It handles complex and primitive types automatically, for example you can load the class below:
 
-	@interface PrimativesModel : Loadable
+	@interface PrimitivesModel : Loadable
 	
 	@property (assign) BOOL a;
 	@property (assign) char b;
@@ -31,7 +31,7 @@ It handles complex and primitive types automatically, for example you can load t
 
 	@end
 	
-It handles NSDate properties like DateModel below. In this case the value is expected to be in the json as a number of seconds since 1970.
+It handles NSDate properties like DateModel below. In this case the value is expected to be in the JSON as a number of seconds since 1970.
 
 	@interface DateModel : Loadable
 
